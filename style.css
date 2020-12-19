@@ -5,6 +5,7 @@
 html,
 body {
   background-color: #e674a0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .parallax {
@@ -127,7 +128,6 @@ body {
 .content{
   position: relative;
   color: white;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   line-height: 1.8em; /* 1em = 12px in this case. 20/12 == 1.666666  */
   /* position: relative; */
@@ -143,8 +143,16 @@ body {
   top: 0;
 }
 
+#about-info{
+  padding-bottom: 15px;
+}
+
 #info-cards {
   display: flex;
+}
+
+#info-cards-mobile{
+  display: none;
 }
 
 .about-img{
@@ -170,6 +178,22 @@ body {
   line-height: 1.8em;
 }
 
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(0.2px) translateZ(0);
+  transform: perspective(0.2px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
 .floating {   
   animation-name: floating; 
   animation-duration: 1s; 
@@ -182,6 +206,7 @@ body {
   50%  { transform: translate(0, 3px); } 
   100%   { transform: translate(0, -0px); }     
 } 
+
 
 
 /* FAQ */
@@ -207,6 +232,7 @@ background: linear-gradient(0deg, rgba(186,103,149,1) 0%, rgba(124,75,129,1) 100
 
 .faq {
   list-style: none;
+  margin-top: 0;
 }
 
 #faq-content {
@@ -219,7 +245,7 @@ background: linear-gradient(0deg, rgba(186,103,149,1) 0%, rgba(124,75,129,1) 100
   cursor: pointer;
   transition: color 0.5s ease;
   margin-bottom: 20px;
-  color: #d0d9db;
+  color: white;
 }
 
 .faq .question:hover {
@@ -540,31 +566,21 @@ background: linear-gradient(0deg, rgba(186,103,149,1) 0%, rgba(124,75,129,1) 100
 
 /* TABLET */
 @media (max-width: 1025px) {
-  #header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #header-right img {
-    padding-top: 10px;
-    width: 70vw;
-    align-self: flex-end;
-  }
-
-  #header-right h2 {
-    font-size: 1.5em;
-  }
-
   .section {
-    font-size: 1.3em;
-    padding: 5vh 0vw;
+    font-size: 1em;
+    padding: 7vh 7vw;
   }
 
   #info-cards {
-    display: none;
+    /* display: none; */
+    font-size: 0.9em;
   }
+
+  .card{
+    padding: 20px 30px;
+  }
+
+  /* remove card animations with jQuery */
 
   #faq-content {
     display: flex;
@@ -670,6 +686,39 @@ background: linear-gradient(0deg, rgba(186,103,149,1) 0%, rgba(124,75,129,1) 100
     position: absolute;
     top: 20%;
     right: 8%;
+  }
+
+  /* ABOUT */
+  .section{
+    font-size: 0.8em;
+  }
+  #info-cards {
+    display: none;
+  }
+
+  #info-cards-mobile {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .card-mobile{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .about-img-mobile{
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-text-mobile{
+    margin-left: 20px;
+    font-size: 0.9em;
+  }
+  
+  .about-text-right{
+    text-align: right;
   }
 
   #header{
