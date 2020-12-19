@@ -5,8 +5,15 @@
     <title>AthenaHacks 2021</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
+    <!-- MOBILE METAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Open+Sans&family=Playfair+Display&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -20,371 +27,438 @@
 
 </head>
 <body>
-<div class="parallax">
-    <div class="parallax__layer parallax__layer__1">
-        <img src="layer4.png" />
-    </div>
-    <div class="parallax__layer parallax__layer__2">
-        <img src="layer35.png" />
-    </div>
-    <div class="parallax__layer parallax__layer__3">
-        <img src="layer3.png" />
-    </div>
-    <div class="parallax__layer parallax__layer__4">
-        <img src="layer2.png" />
-    </div>
-    <div class="parallax__layer parallax__layer__5">
-        <img src="layer1.png" />
-    </div>
-    <div class="parallax__layer parallax__layer__6">
-        <img src="layer0.png" />
-    </div>
-    <div class="parallax__layer parallax__layer__title">
-        <img src="whitelogo.png" />
-    </div>
+    <div class="parallax">
 
-    <div class="parallax__cover">
+        <div class="parallax__layer parallax__layer__1">
+            <img src="layer4.png" />
+        </div>
+        <div class="parallax__layer parallax__layer__2">
+            <img src="layer35.png" />
+        </div>
+        <div class="parallax__layer parallax__layer__3">
+            <img src="layer3.png" />
+        </div>
+        <div class="parallax__layer parallax__layer__4">
+            <img src="layer2.png" />
+        </div>
+        <div class="parallax__layer parallax__layer__5">
+            <img src="layer1.png" />
+        </div>
+        <div class="parallax__layer parallax__layer__6">
+            <img src="layer0.png" />
+        </div>
+        <div class="parallax__layer parallax__layer__title">
+            <img src="whitelogo.png" />
+        </div>
+
+        <div class="parallax__cover">
 
         <!-- break -->
-    <div class="content">
+        <div class="content">
+
+            <div class = "full-bg">
+                <img class = "mobile-logo" src="whitelogo.png" />
+            </div>
        
-        <!-- ABOUT -->
-        <div class = "section" id = "about">
-            <div class="section-title">about</div>
-            <div id="about-info" class = "paragraph">
-                <p>
-                    Join us for a weekend dedicated to <b>filling the gender gap</b>,
-                    exploring technology, and building the next big thing! Our mission
-                    is to support and nurture women* in tech by hosting Southern
-                    California's premiere <b>all female* hackathon</b>. Expect a weekend
-                    full of workshops, mentorship, tech talks, social activities, food,
-                    and more! No experience necessary, you just need passion.
-                </p>
-                <p>
-                    <strong>*trans and non-binary inclusive</strong>
-                </p>
-            </div>
-            <div id="info-cards">
-                <div class="card">
-                    <img class="about-img" src="build.png" width="150px"></img>
+            <!-- ABOUT -->
+            <div class = "section" id = "about">
+                <div class="section-title">about</div>
+                <div id="about-info" class = "paragraph">
                     <p>
-                        From hardware to mobile, there are so many fields to
-                        explore! We want women to explore their ideas and interests, and
-                        are looking forward to some amazing projects!
+                        Join us for a weekend dedicated to <b>filling the gender gap</b>,
+                        exploring technology, and building the next big thing! Our mission
+                        is to support and nurture women* in tech by hosting Southern
+                        California's premiere <b>all female* hackathon</b>. Expect a weekend
+                        full of workshops, mentorship, tech talks, social activities, food,
+                        and more! No experience necessary, you just need passion.
+                    </p>
+                    <p>
+                        <strong class = "inclusive">*trans and non-binary inclusive</strong>
                     </p>
                 </div>
-                <div class="card">
-                    <img class="about-img" src="grow.png" width="150px"></img>
-                    <p>
-                        We're all about helping each other grow! We hope to foster a
-                        supportive environment so that each participant at AthenaHacks
-                        feels welcome and comfortable.
-                    </p>
-                </div>
-                <div class="card">
-                    <img class="about-img" src="pencil.png" width="150px"></img>
-                    <p>
-                        Right now, only 20% of hackathon participants are women. We hope
-                        to fill that gap by providing a comfortable environment that is
-                        focused on learning and exploring!
-                    </p>
+                <div id="info-cards">
+                    <div class="card">
+                        <img class="floating about-img" src="build.png" width="150px"></img>
+                        <p>
+                            From hardware to mobile, there are so many fields to
+                            explore! We want women to explore their ideas and interests, and
+                            are looking forward to some amazing projects!
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img class="floating about-img" src="grow.png" width="150px"></img>
+                        <p>
+                            We're all about helping each other grow! We hope to foster a
+                            supportive environment so that each participant at AthenaHacks
+                            feels welcome and comfortable.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img class="floating about-img" src="pencil.png" width="150px"></img>
+                        <p>
+                            Right now, only 20% of hackathon participants are women. We hope
+                            to fill that gap by providing a comfortable environment that is
+                            focused on learning and exploring!
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- FAQ -->
-        <div class="section" id="faq">
-            <div class="section-title">faqs</div>
-            <div id="faq-content">
-            <ul class ="faq">
-                <li>
-                    <h3 class="question">What's a hackathon?
-                    </h3>
-                    <div class="answer">
-                        A hackathon is a 24 hour event where students with similar interests come together to
-                        work
-                        on a
-                        project. You can attend workshops, hear from people in the computer science field and
-                        network with
-                        students and reps from companies! </div>
-                </li>
-                <li>
-                    <h3 class="question">Who can attend?
+            <!-- FAQ -->
+            <div class="section" id="faq">
+                <div class="section-title">faqs</div>
+                <div id="faq-content">
+                <ul class ="faq">
+                    <li>
+                        <h3 class="question">What's a hackathon?
+                        </h3>
+                        <div class="answer">
+                            A hackathon is a 24 hour event where students with similar interests come together to
+                            work
+                            on a
+                            project. You can attend workshops, hear from people in the computer science field and
+                            network with
+                            students and reps from companies! </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Who can attend?
 
-                    </h3>
-                    <div class="answer">
-                        Female* undergraduates and high schoolers are welcome to attend; we'd love to have any
-                        males interested
-                        in helping our cause and any women in the industry to mentor or volunteer! <br />
-                        *trans and non-binary inclusive </div>
-                </li>
-                <li>
-                    <h3 class="question">What are the rules about high schoolers?
-                    </h3>
-                    <div class="answer">
-                        If you're a high schooler who will be at least 18 years old by AthenaHacks, you are
-                        invited
-                        to attend!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">How do I get to USC?
-                    </h3>
-                    <div class="answer">
-                        This year we are sending buses to nearby schools. More details will be
-                        coming soon so keep a look
-                        out. Registering for a spot on a bus will happen after application acceptances go out.
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Do I need to be a CS major or minor?
-                    </h3>
-                    <div class="answer">
-                        No! This is the perfect place for any student to create their first coding project.
-                        We'll
-                        have plenty
-                        of resources for beginners to get started!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">How do I apply?
-                    </h3>
-                    <div class="answer">
-                        Applications for hackers are open now until Feb 16th. Mentor and volunteer apps will open in
-                        January 2020.
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Does this cost money?
-                    </h3>
-                    <div class="answer">
-                        Nope! Admission is free and covers overnight stay, food, all the snacks you could ever
-                        want, and of
-                        course, our sponsors and AthenaHacks will provide you with the free swag!!
-                    </div>
-                </li>
+                        </h3>
+                        <div class="answer">
+                            Female* undergraduates and high schoolers are welcome to attend; we'd love to have any
+                            males interested
+                            in helping our cause and any women in the industry to mentor or volunteer! <br />
+                            *trans and non-binary inclusive </div>
+                    </li>
+                    <li>
+                        <h3 class="question">What are the rules about high schoolers?
+                        </h3>
+                        <div class="answer">
+                            If you're a high schooler who will be at least 18 years old by AthenaHacks, you are
+                            invited
+                            to attend!
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">How do I get to USC?
+                        </h3>
+                        <div class="answer">
+                            This year we are sending buses to nearby schools. More details will be
+                            coming soon so keep a look
+                            out. Registering for a spot on a bus will happen after application acceptances go out.
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Do I need to be a CS major or minor?
+                        </h3>
+                        <div class="answer">
+                            No! This is the perfect place for any student to create their first coding project.
+                            We'll
+                            have plenty
+                            of resources for beginners to get started!
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">How do I apply?
+                        </h3>
+                        <div class="answer">
+                            Applications for hackers are open now until Feb 16th. Mentor and volunteer apps will open in
+                            January 2020.
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Does this cost money?
+                        </h3>
+                        <div class="answer">
+                            Nope! Admission is free and covers overnight stay, food, all the snacks you could ever
+                            want, and of
+                            course, our sponsors and AthenaHacks will provide you with the free swag!!
+                        </div>
+                    </li>
 
-                <li>
-                    <h3 class="question">What about travel reimbursements?
-                    </h3>
-                    <div class="answer">
-                        Unfortunately, we will not be able to provide travel reimbursements this year. Sorry for
-                        the
-                        inconvenience :(
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">How do teams work?
-                    </h3>
-                    <div class="answer">
-                        At most teams can have 4 people. You can have your teammates in mind before the event,
-                        or
-                        you can
-                        find a team during our team formation activity before and after opening ceremony!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Will there be hardware available?
-                    </h3>
-                    <div class="answer">
-                        Yes! Hardware will be provided by MLH.
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Where do I sleep?
-                    </h3>
-                    <div class="answer">
-                        If hacking all night isn't your way to go, we'll have places provided for you to catch a
-                        few Z's!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">What should I bring?
-                    </h3>
-                    <div class="answer">
-                        Remember to bring a valid student ID for admission and anything you need to hack away!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Is there a code of conduct?
-                    </h3>
-                    <div class="answer">
-                        Yes, we want to make AthenaHacks enjoyable for everyone! We follow MLH's Code of
-                        Conduct:
-                        <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>.
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Can I mentor or volunteer?
-                    </h3>
-                    <div class="answer">
-                        Yes! We welcome all regardless of gender who want to help. We appreciate all who want to
-                        support our cause. Mentors help hackers during the event
-                        with any technical questions they might have. Volunteers support the organizing team
-                        during
-                        the hackathon with various
-                        tasks. Links for both apps are at the top of the page.
-                    </div>
-                </li>
-            </ul>
-            <div id="faq-right">
-                <img src="chairowl.png" class="side"></img>
-                <div> if we missed your question, hit us up at <a
-                        href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></div>
-            </div>
-            </div> 
-        </div>
-
-        <div id = "sponsors">
-            <div class="section-title">Sponsors</div>
-            <div class="sponsor-thanks">
-                A <b>huge</b> thank you to all our returning and new sponsors for 2020! We are no longer accepting
-                sponsors for this year, but keep an eye out for next year.
-                <br />
-            </div>
-            <div id="sponsor-logos">
-                <!-- Beta Tier -->
-
-                <!-- Gamma Tier-->
-                <div class="sponsor-tier tier3">
-                    <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank"><img
-                            src="images/sponsors/microsoft.png"></a>
-                    <a href="https://www.raytheon.com/capabilities" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/raytheon-logo.png"></a>
-                    <a href="https://www.zynga.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/zynga-logo.png"></a>
-                    <a href="https://www.joinhoney.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/honey-logo.svg" id="honey"></a>
-                    <a href="https://www.qualcomm.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/qualcomm.png"></a>
-                    <a href="https://www.bloomberg.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/bloomberg.png"></a>
-                    <a href="https://www.activision.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/activision.png"></a>
-
-                    
-                    <a href="https://www.pimco.com/" target="_blank"><img src="images/sponsors/pimco-logo.png"></a>
-
-
+                    <li>
+                        <h3 class="question">What about travel reimbursements?
+                        </h3>
+                        <div class="answer">
+                            Unfortunately, we will not be able to provide travel reimbursements this year. Sorry for
+                            the
+                            inconvenience :(
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">How do teams work?
+                        </h3>
+                        <div class="answer">
+                            At most teams can have 4 people. You can have your teammates in mind before the event,
+                            or
+                            you can
+                            find a team during our team formation activity before and after opening ceremony!
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Will there be hardware available?
+                        </h3>
+                        <div class="answer">
+                            Yes! Hardware will be provided by MLH.
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Where do I sleep?
+                        </h3>
+                        <div class="answer">
+                            If hacking all night isn't your way to go, we'll have places provided for you to catch a
+                            few Z's!
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">What should I bring?
+                        </h3>
+                        <div class="answer">
+                            Remember to bring a valid student ID for admission and anything you need to hack away!
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Is there a code of conduct?
+                        </h3>
+                        <div class="answer">
+                            Yes, we want to make AthenaHacks enjoyable for everyone! We follow MLH's Code of
+                            Conduct:
+                            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>.
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Can I mentor or volunteer?
+                        </h3>
+                        <div class="answer">
+                            Yes! We welcome all regardless of gender who want to help. We appreciate all who want to
+                            support our cause. Mentors help hackers during the event
+                            with any technical questions they might have. Volunteers support the organizing team
+                            during
+                            the hackathon with various
+                            tasks. Links for both apps are at the top of the page.
+                        </div>
+                    </li>
+                </ul>
+                <div id="faq-right">
+                    <img src="chairowl.png" class="side"></img>
+                    <div> if we missed your question, hit us up at <a
+                            href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></div>
                 </div>
-                <!-- Delta Tier-->
-                <div class="sponsor-tier tier4">
-                    <a href="http://google.com/" target="_blank"><img
-                        src="https://athenahacks.com/images/sponsors/google.png"></a>
-                    <a href="https://www.twilio.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/twilio-logo.png"></a>
+                </div> 
+            </div>
+        
+            <!-- SPONSORS -->
+            <div id = "sponsors">
+                <div class="section-title">Sponsors</div>
+                <div class="sponsor-thanks">
+                A huge thank you to all our sponsors! If you're interested in sponsoring AthenaHacks 2021, please contact us at athenahacks@gmail.com
+                </div>
+                <div id="sponsor-logos">
+                    <!-- Beta Tier -->
 
-                    <a href="https://www.oracle.com/index.html" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/Oracle.png"></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img
+                    <!-- Gamma Tier-->
+                    <div class="sponsor-tier tier3">
+                        <a href="https://www.zynga.com/" target="_blank"><img
+                            class = "click-sponsor" src="https://athenahacks.com/images/sponsors/zynga-logo.png"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/facebook2.png"></a>
-                    <a href="https://www.invoca.com/" target="_blank"><img
+                        <a href="https://www.invoca.com/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/invoca-logo.png"></a>
-                    <a href="https://www.standardindustries.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/standard.png"></a>
-                    <a href="https://www.northropgrumman.com/" target="_blank"><img
-                            src="images/sponsors/northrop_grumman_logo.png"></a>
-                    <a href="https://www.ibm.com/" target="_blank"><img src="images/sponsors/ibm.png"></a>
-                    <a href="https://disney.com/" target="_blank"><img src="images/sponsors/disney-black.png"></a>
-
+                        <a href="https://disney.com/" target="_blank"><img src="disney.png"></a>
+                        <a href="http://bloomberg.com/" target="_blank"><img
+                            src="bloomberg.png"></a>
+                        <a href="http://microsoft.com/" target="_blank"><img
+                            src="microsoft.png"></a>
+                    </div>
+                    <!-- Delta Tier-->
+                    <div class="sponsor-tier tier4">
+                    </div>
+                    <!-- Other Tier -->
+                    <div class="sponsor-tier tier5">
+                    </div>
+                    <!-- Food Sponsors -->
+                    <div class="sponsor-tier tier5">
+                    </div>
                 </div>
-                <!-- Other Tier -->
-                <div class="sponsor-tier tier5">
-                    <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/stickermule.png"></a>
-                    <a href="https://stickerapp.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/stickerapp_logo.png"></a>
+                <div id="keynote">
+                    <div id="keynote-header">
+                        <h4>about our keynote speaker</text>
+                        <h1>Ruthe Farmer</h1>
+                    </div>
+                    <div id="keynote-info">
+                        
+                        <text>Ruthe has spent her career working to increase diversity in technology and engineering. She
+                            started this journey at the Girl Scouts, working to increase STEM education for young women. By
+                            2008, she was helping to run the National Center for Women & Information Technology (NCWIT) and
+                            in 2012, chaired the global Computer Science Education Week. In 2016 she became the Senior
+                            Policy Advisor for Tech Inclusion at the White House Office of Science & Technology Policy under
+                            the final year of the Obama Administration. Today she serves as the Chief Evangelist for
+                            CSforALL, an organization dedicated to making computer science an integral part of all K-12
+                            education in America.
 
-                    <a href="https://mlh.io/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/mlh-logo.png"></a>
+                        </text>
 
-                    <a href="https://ripplematch.com/" target="_blank"><img src="images/sponsors/ripplematch.png"></a>
-                    <a href="https://usg.usc.edu/resources/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/USG-logo.png"></a>
-                    <a href="https://viterbischool.usc.edu/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/viterbilogo.png"></a>
-                </div>
-                <!-- Food Sponsors -->
-                <div class="sponsor-tier tier5">
+                        <img src="./images/people/ruthe_headshot.jpg">
 
-                    <a href="https://rawrev.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/rawrev.png"></a>
-                    <a href="https://baresnacks.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/bare-logo.png"></a>
-
-                    <a href="https://www.instagram.com/cafedulcela/?hl=en" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/dulce-logo.png"></a>
-
-                    <a href="https://hvmn.com/go-cubes" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/gocubes-logo.png"></a>
-                    <a href="https://www.sujajuice.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/suja-logo.png"></a>
-
-                    <a href="https://guayaki.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/yerba-mate-logo.png"></a>
-                    <a href="https://pocky.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/pocky-logo.png"></a>
-                    <a href="http://www.thebobatruck.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/bobatruck.png"></a>
-                    <a href="https://www.zesttea.com/" target="_blank"><img
-                        src="https://athenahacks.com/images/sponsors/zesttea.png"></a>
-                    <a href="https://www.monsterenergy.com" target="_blank"><img
-                        src="https://athenahacks.com/images/sponsors/monster.png"></a>
-                    <a href="https://myteasquares.com/" target="_blank"><img
-                        src="https://athenahacks.com/images/sponsors/teasquares.png"></a>
-                    <a href="https://www.redbull.com/" target="_blank"><img
-                        src="https://athenahacks.com/images/sponsors/redbull.png"></a>
-                    <a href="https://risebrewingco.com/" target="_blank"><img
-                        src="https://athenahacks.com/images/sponsors/risebrewing.png"></a>
-                    <!-- <a href="https://baresnacks.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/bare_snacks.png"></a>
-                    <a href="https://www.simplygum.com/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/simply_gum.png"></a> -->
+                    </div>
                 </div>
             </div>
-            <div id="keynote">
-                <div id="keynote-header">
-                    <h4>about our keynote speaker</text>
-                    <h1>Ruthe Farmer</h1>
+
+            <!-- TEAM -->
+            <div id = "team">
+                <!-- team -->
+                <div class="section" id="organizers">
+                    <div class="section-title">Meet The Team</div>
+
+                    <div class="team">
+                        <div class="person">
+                            <img src="images/people/jill.png" class="profile-img">
+                            <p class = "person-name">Jillian Khoo</p>
+                            <p class="team-name">Programs</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/claire.png" class="profile-img">
+                            <p class ="person-name">Claire Jutabha</p>
+                            <p class="team-name">Programs</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/natalie.png" class="profile-img">
+                            <p class = "person-name">Natalie Abreu</p>
+                            <p class="team-name">Programs</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/ipek.png" class="profile-img">
+                            <p class ="person-name">Ipek Goktan</p>
+                            <p class="team-name">Programs</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/jessica.png" class="profile-img fin">
+                            <p class ="person-name">Jessica Chen</p>
+                            <p class="team-name">Finances</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/lydia.png" class="profile-img fin">
+                            <p class ="person-name">Lydia DiBlasio</p>
+                            <p class="team-name">Finances</p>
+                        </div>
+
+                        <div class="person finance">
+                            <img src="images/people/stacy.png" class="profile-img fin">
+                            <p class ="person-name">Stacy Shen</p>
+                            <p class="team-name">Finances</p>
+                        </div>
+
+                        <div class="person finance">
+                            <img src="images/people/ari.png" class="profile-img fin">
+                            <p class ="person-name">Ari Sokolov</p>
+                            <p class="team-name">Finances</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/alyssa.png" class="profile-img fin">
+                            <p class ="person-name">Alyssa Cho</p>
+                            <p class="team-name">Finances</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/lindsay.png" class="profile-img">
+                            <p class ="person-name">Lindsay Huang</p>
+                            <p class="team-name">Marketing + Design</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/leslie.png" class="profile-img">
+                            <p class ="person-name">Leslie Lin</p>
+                            <p class="team-name">Marketing + Design</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/julia.png" class="profile-img">
+                            <p class ="person-name">Julia Cordero</p>
+                            <p class="team-name">Marketing + Design</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/melanie.png" class="profile-img">
+                            <p class ="person-name">Melanie Toh</p>
+                            <p class="team-name">Marketing + Design</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/angela.png" class="profile-img">
+                            <p class ="person-name">Angela Xuan</p>
+                            <p class="team-name">Marketing + Design</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/michele.png" class="profile-img">
+                            <p class ="person-name">Michele Chung</p>
+                            <p class="team-name">Marketing + Design</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/elizabeth.png" class="profile-img fin">
+                            <p class ="person-name">Elizabeth Gonzalez</p>
+                            <p class="team-name">Logistics</p>
+                        </div>
+
+                        <div class="person finance">
+                            <img src="images/people/shreya.png" class="profile-img fin">
+                            <p class ="person-name">Shreya Havaldar</p>
+                            <p class="team-name">Logistics</p>
+                        </div>
+
+                        <div class="person finance">
+                            <img src="images/people/radhika.png" class="profile-img fin">
+                            <p class ="person-name">Radhika Agrawal</p>
+                            <p class="team-name">Logistics</p>
+                        </div>
+
+                        <div class="person finance">
+                            <img src="images/people/brittany.png" class="profile-img fin">
+                            <p class ="person-name">Brittany Rollins</p>
+                            <p class="team-name">Logistics</p>
+                        </div>
+
+                        <div class="person">
+                            <img src="images/people/jenna.png" class="profile-img fin">
+                            <p class ="person-name">Jenna Lau</p>
+                            <p class="team-name">Logistics</p>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div id="keynote-info">
-                    
-                    <text>Ruthe has spent her career working to increase diversity in technology and engineering. She
-                        started this journey at the Girl Scouts, working to increase STEM education for young women. By
-                        2008, she was helping to run the National Center for Women & Information Technology (NCWIT) and
-                        in 2012, chaired the global Computer Science Education Week. In 2016 she became the Senior
-                        Policy Advisor for Tech Inclusion at the White House Office of Science & Technology Policy under
-                        the final year of the Obama Administration. Today she serves as the Chief Evangelist for
-                        CSforALL, an organization dedicated to making computer science an integral part of all K-12
-                        education in America.
-
-                    </text>
-
-                    <img src="./images/people/ruthe_headshot.jpg">
-
-                </div>
-            </div>
+            </div> 
+            <!-- end TEAM -->
         </div>
-        <div id = "team">team</div>
-
+        </div> 
+        <!-- end in parallax -->
     </div>
-</div>
 
+    <!-- partial -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.faq li .question').click(function() {
+        $(this).find('.plus-minus-toggle').toggleClass('collapsed');
+        $(this).parent().toggleClass('active');
+        });
 
-<!-- partial -->
-<script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function() {
-    $('.faq li .question').click(function() {
-      $(this).find('.plus-minus-toggle').toggleClass('collapsed');
-      $(this).parent().toggleClass('active');
+        $('.click-sponsor').click(function(){
+            $(this).addClass('hvr-grow');
+        });
     });
-  });
-  
-</script>
+    
+    </script>
 
 </body>
 </html>
