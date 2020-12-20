@@ -8,10 +8,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.social-test{
-  position: absolute;
-}
-
 .parallax {
   -webkit-perspective: 100px;
           perspective: 100px;
@@ -57,13 +53,31 @@ body {
 }
 
 .parallax__layer__title img{
-  top: 55%;
+  top: 400px;
   /* top: auto; */
+  max-height: 220px;
   height: auto;
 }
 
 .title-img{
   top: 200px;
+}
+
+.social-icons-test{
+  margin-right: 4px;
+  top: 85%;
+  position: absolute;
+  /* background-color: blue; */
+  right: 0%;
+}
+
+.social-icons-test a{
+  text-decoration: none;
+}
+
+.social-icons-test .fa{
+  margin-left: 30px;
+  padding: 0;
 }
 
 .parallax__cover {
@@ -175,6 +189,11 @@ body {
   padding-right: 40px;
 }
 
+.fa-medium{
+  color: white;
+  display: none;
+}
+
 .dt{
   width: 90px;
 }
@@ -198,6 +217,10 @@ body {
 }
 
 .about-text a{
+  color: #ffcccc;
+}
+
+.about-text-mobile a{
   color: #ffcccc;
 }
 
@@ -591,9 +614,22 @@ body {
   margin-right: 0;
 }
 
+@media (max-width: 1250px) {
+  /* to help parallax remain smooth */
+  .social-icons-test{
+    top: 80%;
+  }
+}
 
 /* TABLET */
 @media (max-width: 1025px) {
+  /* parallax */
+  .social-icons-test{
+    top: 75%;
+  }
+  .social-icons-test .fa{
+    margin-left: 20px;
+  }
 
   /* about */
   .section {
@@ -726,8 +762,25 @@ body {
   .mobile-logo{
     width: 250px;
     position: absolute;
-    top: 20%;
+    top: 16%;
+    right: 7%;
+  }
+
+  .social-icons-mobile{
+    position: absolute;
+    top: 45%;
     right: 8%;
+    padding: 0;
+    text-align: right;
+  }
+
+  .social-icons-mobile .fa{
+    padding: 0;
+    margin-left: 15px;
+  }
+
+  .social-icons-mobile a{
+    text-decoration: none;
   }
 
   /* SECTIONS */
@@ -750,6 +803,14 @@ body {
 
   .dt{
     width: 55px;
+  }
+
+  .medium{
+    display: none;
+  }
+
+  .fa-medium{
+    display: block;
   }
 
   #info-cards-mobile {
