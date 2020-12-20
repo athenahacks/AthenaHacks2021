@@ -354,6 +354,11 @@ body {
   width: 80%;
 }
 
+.sponsor-msg a{
+  color: white;
+}
+
+
 .sponsor-tier {
   overflow-wrap: normal;
   display: flex;
@@ -770,7 +775,7 @@ body {
 
   #header{
     padding-bottom: 50px;
-  } */
+  }
 
   #header-right img {
     padding-top: 10px;
@@ -843,6 +848,11 @@ body {
   opacity: 0.9;
   font-family: 'Open-Sans', sans-serif;
   padding-bottom: 20px;
+}
+
+/* FOOTER */
+#footer{
+  background-color: #e36f81;
 }
 
 }
