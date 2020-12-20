@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('.faq li .question').click(function () {
-      $(this).find('.plus-minus-toggle').toggleClass('collapsed');
+      $(this).find('.expand-icon').toggleClass("fa-plus-circle fa-minus-circle");
+      // $(this).find('.plus-minus-toggle').toggleClass('collapsed');
       $(this).parent().toggleClass('active');
     });
   });
