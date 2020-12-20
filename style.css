@@ -167,11 +167,16 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .press-img{
   width: 200px;
   padding-right: 40px;
+}
+
+.dt{
+  width: 90px;
 }
 
 #info-cards {
@@ -735,8 +740,12 @@ body {
   }
 
   .press-img{
-    width: 100px;
-    padding-right: 20px;
+    width: 120px;
+    padding-right: 30px;
+  }
+
+  .dt{
+    width: 55px;
   }
 
   #info-cards-mobile {
