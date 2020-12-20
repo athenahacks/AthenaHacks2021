@@ -8,6 +8,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.social-test{
+  position: absolute;
+}
+
 .parallax {
   -webkit-perspective: 100px;
           perspective: 100px;
@@ -51,10 +55,15 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .parallax__layer__title img{
   bottom: 0;
-  top: auto;
+  top: 490px;
   height: auto;
+}
+
+.title-img{
+  padding-top: 20px;
 }
 
 .parallax__cover {
@@ -143,12 +152,32 @@ body {
   top: 0;
 }
 
+.social-icons-about{
+  padding-top: 15px;
+  text-align: left;
+  width: 200px;
+  margin-right: 0;
+}
+
 #about-info{
   padding-bottom: 15px;
 }
 
+#press-links{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.press-img{
+  width: 200px;
+  padding-right: 40px;
+}
+
 #info-cards {
   display: flex;
+  flex-basis: 0;
+  flex-flow:row;
 }
 
 #info-cards-mobile{
@@ -157,6 +186,10 @@ body {
 
 .about-img{
   width: 50%;
+}
+
+.about-text{
+  width: 100%;
 }
 
 .inclusive{
@@ -168,6 +201,7 @@ body {
   /* background-color: white;
   opacity: 0.3; */
   border-style: solid white;
+  width: 100%;
   padding: 50px;
   margin: 15px;
   align-items: center;
@@ -206,8 +240,6 @@ body {
   50%  { transform: translate(0, 3px); } 
   100%   { transform: translate(0, -0px); }     
 } 
-
-
 
 /* FAQ */
 #faq{
@@ -300,58 +332,76 @@ body {
   text-align: right;
   padding-left: 20%;
 }
-/* sponsors */
 
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
+
+/* SPONSORS */
 
 #sponsors{
   background: rgb(232,120,137);
   background: linear-gradient(0deg, rgba(232,120,137,1) 0%, rgba(186,103,149,1) 100%);
 }
-/* SPONSORS */
-#sponsors {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  /*background-color: rgba(255, 255, 255, 0.3);*/
-  /* background-color: #0E0C1C;*/
-  background-color: #212D3E;
-  align-self: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
 
 #sponsor-logos {
   /* background-color: rgb(255, 255, 255, 0.15); */
   /* background-color: white; */
-  display: flex;
-  padding: 30px 100px;
-  border-radius: 20px;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-bottom: 40px;
+  padding: 60px 60px 0;
+  /* padding-top: 50px;
+  padding-bottom: 0; */
+
 }
+
+.sponsor-msg{
+  width: 80%;
+}
+
+.sponsor-tier {
+  overflow-wrap: normal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 40px; */
+  /* margin-bottom: 20px; */
+}
+
+.sponsor-tier img {
+  padding: 15px;
+  align-self: flex-start;
+}
+
+.tier1 img {
+  width: 10vw;
+}
+
+.tier3 {
+  margin-bottom: 20px;
+}
+
+.tier2 img {
+  max-width: 320px !important;
+}
+
+.tier3 img {
+  width: 32vw;
+  padding: 0 10px 30px 30px;
+  /* height: 10vh; */
+}
+
+/* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
+#honey {
+  height: 13vh;
+}
+
+.tier4 img {
+  max-height: 9vh;
+  max-width: 15vw;
+}
+
+.tier5 img {
+  max-width: 10vw;
+}
+
+/* keynote, hidden for the time being */
 #keynote {
   background-color: white;
   display: none;
@@ -414,114 +464,12 @@ body {
 }
 
 
-.sponsor-tier {
-  /* overflow-wrap: normal; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  /* padding-bottom: 40px; */
-  margin-bottom: 20px;
-}
-
-.sponsor-tier img {
-  padding: 15px;
-  align-self: flex-start;
-}
-
-.sponsor_header {
-  flex-direction: row;
-  /* justify-content: center; */
-  align-content: center;
-  /* align-items: center; */
-  padding-bottom: 20px;
-  /*color: #685E9E;*/
-  color: #c78d8d;
-  ;
-}
-
-.purple-rect {
-  align-self: center;
-  height: 5px;
-  background: rgba(177, 156, 217, 0.5);
-  width: 100%;
-}
-
-#sponsors .section-title {
-  /*color: #9dd8d2;*/
-  padding: 30px;
-  padding-top: 20px;
-  font-family: 'Cabin', sans-serif;
-}
-
-.sponsor-thanks {
-  margin: auto;
-  width: 65%;
-  padding-bottom: 50px;
-}
-
-.sponsor-thanks p {
-  margin-top: 5px;
-}
-
-.sponsor-title {
-  /* align-self: center; */
-  font-size: 60px;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.sponsor-title.old {
-  font-size: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.tier1 img {
-  width: 10vw;
-}
-
-.tier3 {
-  margin-bottom: 20px;
-}
-
-.tier2 img {
-  max-width: 320px !important;
-}
-
-.tier3 img {
-  width: 25vw;
-  /* height: 10vh; */
-}
-
-/* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
-#honey {
-  height: 13vh;
-}
-
-.tier4 img {
-  max-height: 9vh;
-  max-width: 15vw;
-}
-
-.tier5 img {
-  max-width: 10vw;
-}
-
 /* TEAM */
 #team{
   /* background-color:greenyellow; */
   background: rgb(97,67,107);
   background: linear-gradient(0deg, rgba(97,67,107,1) 0%, rgba(182,100,126,1) 58%, rgba(232,120,137,1) 100%);
 }
-/*#organizers h3{
-  text-align: left;
-  margin-bottom: 0;
-  padding-left: 25px;
-  padding-top: 25px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}*/
 
 #organizers p{
   font-size: 16px;
@@ -542,7 +490,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-bottom: 50px;
   padding: 20px;
@@ -569,6 +517,59 @@ body {
 
 .person-name{
   margin: 0;
+}
+
+/* FOOTER */
+#footer {
+  width: 100%;
+  background-color: #2f3d52;
+  /* opacity: 0.1;*/
+  padding: 15px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+#footer p {
+  margin: 0;
+}
+
+.footer-left {
+  float: left;
+  width: 25%;
+}
+
+.made-with {
+  text-align: center;
+  width: 75%;
+}
+
+#footer .made-with p {
+  margin-top: 20px;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.footer-logo {
+  width: 80px;
+  overflow: hidden;
+}
+
+.footer-img {
+  width: 100%;
+}
+
+
+.fa {
+  padding-right: 15px;
+  color: white;
+
+}
+
+.social-icons {
+  text-align: left;
+  width: 200px;
+  margin-right: 0;
 }
 
 
@@ -621,22 +622,24 @@ body {
     text-align: center;
   }
 
-/* SPONSORS */
-  #sponsor-logos {
+  /* sponsors */
+
+  /* #sponsor-logos {
     margin-left: 1vw;
     margin-right: 1vw;
-  }
+  } */
 
-  .sponsor-tier {
+  /* .sponsor-tier {
     padding: 2vh;
-  }
+  } */
 
-  .sponsor-tier img {
+  /* .sponsor-tier img {
     padding: 5px;
-  }
+  } */
 
+  /* temporary */
   .tier3 img {
-    height: 5vh;
+    padding: 20px;
   }
 
   /* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
@@ -657,11 +660,8 @@ body {
     max-width: 15vw;
   }
 
-  #sponsors {
-    font-size: 1em;
-    padding: 10px;
-  }
 
+  /* TEAM */
   #social_media .section-title {
     font-size: 1.5em;
     /*color: #99D8D1;*/
@@ -716,10 +716,15 @@ body {
     right: 8%;
   }
 
-  /* ABOUT */
+  /* SECTIONS */
   .section{
-    font-size: 0.8em;
+    font-size: 1em;
   }
+  .section-title {
+    font-size: 35px;
+  }
+
+  /* ABOUT */
   #info-cards {
     display: none;
   }
@@ -778,15 +783,38 @@ body {
     padding-bottom: 50px;
   }
 
+  /* SPONSORS */
    #sponsors{
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  .section-title {
-    font-size: 35px;
+  .sponsor-msg{
+    width: 100%;
+    font-size: 1em;
   }
 
+  /* temp */
+  #sponsor-logos{
+    padding: 40px 50px 0;
+  }
+
+  .sponsor-tier{
+    text-align: center;
+  }
+
+  .tier3 img{
+    padding: 10px 5px;
+    width: 80%;
+  }
+
+  /* TEAM */
+  #team{
+    display: none;
+    /* hide team on mobile otherwise it gets super long */
+  }
+
+  /* not used right now but useful in the future */
   #organizers .person{
     width: 100%;
   }
@@ -811,4 +839,5 @@ body {
   font-family: 'Open-Sans', sans-serif;
   padding-bottom: 20px;
 }
+
 }
