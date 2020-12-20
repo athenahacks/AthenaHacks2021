@@ -197,6 +197,10 @@ body {
   width: 100%;
 }
 
+.about-text a{
+  color: #ffcccc;
+}
+
 .inclusive{
   color: #ffcccc;
 }
