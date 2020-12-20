@@ -4,4 +4,8 @@ $(document).ready(function() {
       $(this).parent().toggleClass('active');
     });
   });
+
+$('.click-sponsor').click(function(){
+  $(this).addClass('hvr-grow');
+});
   
