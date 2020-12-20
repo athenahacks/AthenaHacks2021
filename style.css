@@ -310,6 +310,11 @@ body {
   transition: max-height 0.5s ease, padding-bottom 0.5s ease;
 }
 
+
+.answer a{
+  color: #ffd6d6;
+}
+
 .faq li.active .answer {
   max-height: 275px;
   padding-bottom: 25px;
@@ -676,11 +681,6 @@ body {
 
 
   /* TEAM */
-  #social_media .section-title {
-    font-size: 1.5em;
-    /*color: #99D8D1;*/
-  }
-
    #organizers .person{
     width: 33%;
   }
