@@ -57,13 +57,13 @@ body {
 }
 
 .parallax__layer__title img{
-  bottom: 0;
-  top: 490px;
+  top: 55%;
+  /* top: auto; */
   height: auto;
 }
 
 .title-img{
-  padding-top: 20px;
+  top: 200px;
 }
 
 .parallax__cover {
@@ -113,7 +113,7 @@ body {
   width: 40%;
   margin-left: 50%;
   -webkit-transform: translateZ(-10px) translateY(-50%) scale(1.1);
-          transform: translateZ(-10px) translateY(-70%) scale(1.1);
+          transform: translateZ(-10px) translateY(-40%) scale(1.1);
 }
 
 /* sections */
@@ -476,7 +476,7 @@ body {
   font-family: 'Cabin', sans-serif;
   margin-bottom: 0;
   font-weight: 400;
-  color: #d4e8ca;
+  color:white;
 }
 
 .profile-img{
@@ -522,7 +522,7 @@ body {
 /* FOOTER */
 #footer {
   width: 100%;
-  background-color: #2f3d52;
+  background-color: #5c3e66;
   /* opacity: 0.1;*/
   padding: 15px;
   overflow: hidden;
@@ -727,6 +727,11 @@ body {
   /* ABOUT */
   #info-cards {
     display: none;
+  }
+
+  .press-img{
+    width: 100px;
+    padding-right: 20px;
   }
 
   #info-cards-mobile {
