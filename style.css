@@ -147,7 +147,7 @@ body {
 }
 
 .parallax__layer__title{
-  min-height: 724px;
+  min-height: 750px;
   width: 40%;
   margin-left: 50%;
   -webkit-transform: translateZ(-10px) translateY(-50%) scale(1.1);
