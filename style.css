@@ -63,9 +63,32 @@ body {
   top: 200px;
 }
 
+.apply-btn{
+  margin-right: 4px;
+  top: 79%;
+  position: absolute;
+  /* background-color: blue; */
+  right: 0%;
+}
+
+.apply{
+  font-family: 'Cabin', sans-serif;
+  background-color: #2b6c80;
+  border: 1px solid #170c36;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.apply:hover{
+  background-color: #1b5a69;
+}
+
 .social-icons-test{
   margin-right: 4px;
-  top: 85%;
+  top: 88%;
   position: absolute;
   /* background-color: blue; */
   right: 0%;
@@ -167,6 +190,7 @@ body {
 }
 
 .social-icons-about{
+  display: none;
   padding-top: 15px;
   text-align: left;
   width: 200px;
@@ -617,7 +641,10 @@ body {
 @media (max-width: 1250px) {
   /* to help parallax remain smooth */
   .social-icons-test{
-    top: 80%;
+    top: 83%;
+  }
+  .apply-btn{
+    top: 75%;
   }
 }
 
@@ -625,10 +652,13 @@ body {
 @media (max-width: 1025px) {
   /* parallax */
   .social-icons-test{
-    top: 75%;
+    top: 78%;
   }
   .social-icons-test .fa{
     margin-left: 20px;
+  }
+  .apply-btn{
+    top: 70%;
   }
 
   /* about */
@@ -774,6 +804,10 @@ body {
     text-align: right;
   }
 
+  .social-icons-about{
+    display: block;
+  }
+
   .social-icons-mobile .fa{
     padding: 0;
     margin-left: 15px;
@@ -781,6 +815,20 @@ body {
 
   .social-icons-mobile a{
     text-decoration: none;
+  }
+
+  .apply-mobile{
+    font-family: 'Cabin', sans-serif;
+    border: 1px solid #170c36;
+    padding: 8px 20px;
+    color: white;
+    font-size: 0.7em;
+    background-color: #2b6c80;
+    border-radius: 4px;
+  }
+
+  .apply-mobile:hover{
+    background-color: #1b5a69;
   }
 
   /* SECTIONS */
