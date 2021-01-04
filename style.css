@@ -28,7 +28,7 @@ body {
   background-image: url("images/full_bg.png");
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
-  background-position: center center; 
+  background-position: center center;
   min-height: 300px;
   padding-bottom: 20px;
   width: 100%;
@@ -147,6 +147,7 @@ body {
 }
 
 .parallax__layer__title{
+  min-height: 724px;
   width: 40%;
   margin-left: 50%;
   -webkit-transform: translateZ(-10px) translateY(-50%) scale(1.1);
@@ -284,18 +285,18 @@ body {
   transform: scale(1.05);
 }
 
-.floating {   
-  animation-name: floating; 
-  animation-duration: 1s; 
-  animation-iteration-count: infinite; 
-  animation-timing-function: ease-in-out; 
-} 
+.floating {
+  animation-name: floating;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
 
-@keyframes floating { 
-  0% { transform: translate(0,  0px); } 
-  50%  { transform: translate(0, 3px); } 
-  100%   { transform: translate(0, -0px); }     
-} 
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 3px); }
+  100%   { transform: translate(0, -0px); }
+}
 
 /* FAQ */
 #faq{
@@ -496,7 +497,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  
+
 }
 #keynote-info h1 {
   font-size: 2.5em;
@@ -871,7 +872,7 @@ body {
     justify-content: center;
     padding: 10px 0;
   }
-  
+
   .about-img-mobile{
     width: 120px;
     height: 120px;
@@ -881,7 +882,7 @@ body {
     margin-left: 20px;
     font-size: 0.9em;
   }
-  
+
   .about-text-right{
     text-align: right;
   }
