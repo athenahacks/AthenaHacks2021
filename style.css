@@ -25,7 +25,7 @@ body {
 
 .full-bg{
   display: none;
-  background-image: url("images/full_bg.png");
+  background-image: url("images/blank_bg.png");
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
   background-position: center center;
