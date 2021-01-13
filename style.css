@@ -773,7 +773,7 @@ body {
 }
 
 /* MOBILE */
-@media (max-width: 767px) {
+@media (max-width: 767px), handheld and (orientation: landscape){
 
   /* Parallax */
   .full-bg{
