@@ -151,8 +151,8 @@ body {
   min-height: 750px;
   width: 40%;
   margin-left: 50%;
-  -webkit-transform: translateZ(-10px) translateY(-50%) scale(1.1);
-          transform: translateZ(-10px) translateY(-40%) scale(1.1);
+  -webkit-transform: translateY(-40%) scale(1.1);
+          transform: translateY(-40%) scale(1.1);
 }
 
 /* sections */
