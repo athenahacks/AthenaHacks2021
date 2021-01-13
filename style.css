@@ -12,6 +12,7 @@ body {
   -webkit-perspective: 100px;
           perspective: 100px;
   height: 100vh;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
@@ -773,7 +774,7 @@ body {
 }
 
 /* MOBILE */
-@media (max-width: 767px), handheld and (orientation: landscape){
+@media (max-width: 767px){
 
   /* Parallax */
   .full-bg{
