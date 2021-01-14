@@ -839,9 +839,10 @@ body {
   .apply-mobile{
     font-family: 'Cabin', sans-serif;
     border: 1px solid #170c36;
-    padding: 8px 20px;
+    padding: 9px 25px;
+    margin-top: 10px;
     color: white;
-    font-size: 0.7em;
+    font-size: 1em;
     background-color: #2b6c80;
     border-radius: 4px;
   }
