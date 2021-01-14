@@ -395,6 +395,46 @@ body {
   padding-left: 20%;
 }
 
+ /* KEYNOTE */
+ #keynote{
+    /* background-color:greenyellow; */
+    background:rgba(97,67,107); 
+    background: linear-gradient(0deg, rgba(97,67,107,1) 10%, rgba(182,100,126,1) 58%, rgba(232,120,137,1) 100%);
+ }
+
+ #keynote-info-mobile{
+   display: none;
+ }
+ 
+ #keynote-info{
+  display: flex;
+  padding-top: 20px;
+}
+
+.keynote-col{
+  flex: 2;
+}
+
+.keynote-col2{
+  padding-left: 40px;
+  flex: 3;
+}
+
+.keynote-name{
+  font-size: 2em;
+  font-family: 'Cabin', sans-serif;
+}
+
+.keynote-job{
+  /* margin-top: 10px; */
+}
+.keynote-img{
+  min-width: 0;
+  width: 100%;
+  /* border-radius: 8px;
+  border: solid 1px black; */
+}
+
 
 /* SPONSORS */
 
@@ -469,73 +509,14 @@ body {
 }
 
 /* keynote, hidden for the time being */
-#keynote {
-  background-color: white;
-  display: none;
-  /* display flex uusally after keynote announced*/
-  padding: 40px;
-  border-radius: 20px;
-  flex-direction: column;
-  /* align-items: flex-end; */
-  margin-left: 10vw;
-  margin-right: 10vw;
-  opacity: 0.9;
-  margin-bottom: 40px;
-  color: black;
-  text-align: left;
-}
-#keynote img {
-  width: 20%;
-  height: 20%;
-  margin-left: 20px;
-  border-radius: 10px;
-  flex: 1;
-}
-#keynote-info {
-  display: flex;
-  /* flex: 3; */
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-
-}
-#keynote-info h1 {
-  font-size: 2.5em;
-  padding-top: 20px;
-}
-#keynote-info text {
-  font-size: 1.5em;
-  text-align: left;
-  padding-top: 0px;
-  flex: 3;
-}
-@media (max-width: 1025px) {
-  #keynote {
-    margin-left: 1vw;
-    margin-right: 1vw;
-  }
-  #keynote-info {
-    /* flex-direction: column; */
-    flex-direction: column-reverse;
-    margin-left: 0px;
-  }
-  #keynote-info img {
-    margin-left: 0px;
-    margin-top:5px;
-    margin-bottom: 5px;
-    display: none;
-  }
-  #keynote text {
-    font-size: 1em;
-  }
-}
 
 
 /* TEAM */
 #team{
   /* background-color:greenyellow; */
-  background: rgb(97,67,107);
-  background: linear-gradient(0deg, rgba(97,67,107,1) 0%, rgba(182,100,126,1) 58%, rgba(232,120,137,1) 100%);
+  background: rgb(72,74,117);
+  background: linear-gradient(0deg, rgba(72,74,117,1) 4%, rgba(95,69,121,1) 46%, rgba(97,67,107,1) 90%);
+ 
 }
 
 #organizers p{
@@ -589,7 +570,8 @@ body {
 /* FOOTER */
 #footer {
   width: 100%;
-  background-color: #5c3e66;
+  /* background-color: #5c3e66; */
+  background-color: #434570;
   /* opacity: 0.1;*/
   padding: 15px;
   overflow: hidden;
@@ -746,6 +728,42 @@ body {
     max-width: 15vw;
   }
 
+  /* KEYNOTE */
+  #keynote-info{
+    display: flex;
+    padding-top: 20px;
+  }
+
+  #keynote-info-mobile{
+    display: none;
+  }
+  
+  .keynote-col{
+    flex: 2;
+  }
+  
+  .keynote-col2{
+    padding-left: 10px;
+    flex: 3;
+  }
+  
+  .keynote-name{
+    margin: 0;
+    font-size: 1.6em;
+    font-family: 'Cabin', sans-serif;
+  }
+  
+  .keynote-job{
+    font-size: 1em;
+  }
+  
+  .keynote-img{
+    min-width: 0;
+    width: 95%;
+    /* border-radius: 8px;
+    border: solid 1px black; */
+  }
+
 
   /* TEAM */
    #organizers .person{
@@ -769,14 +787,6 @@ body {
   opacity: 0.9;
   font-family: 'Open-Sans', sans-serif;
   padding-bottom: 15px;
-  }
-}
-
-/* MOBILE LANDSCAPE */
-@media screen and (min-width: 321px){
-  html, body{
-    padding: 0;
-    margin: 0;
   }
 }
 
@@ -949,6 +959,38 @@ body {
     width: 80%;
   }
 
+  /* KEYNOTE */
+  #keynote-info{
+    display: none;
+  }
+
+  #keynote-info-mobile{
+    display: block;
+    padding-top: 15px;
+  }
+
+  .keynote-profile-mobile{
+    display: flex;
+  }
+
+  .keynote-bio-mobile{
+    padding: 3px;
+  }
+
+  .keynote-img{
+    flex: 0.5;
+  }
+  
+  .keynote-title{
+    padding-left: 15px;
+    flex: 1;
+  }
+
+  .keynote-name{
+    margin-top: 10px;
+  }
+
+
   /* TEAM */
   #team{
     display: none;
@@ -983,7 +1025,8 @@ body {
 
 /* FOOTER */
 #footer{
-  background-color: #e36f81;
+  /* background-color: #e36f81; */
+  background-color: #5c3e66;
 }
 
 }
