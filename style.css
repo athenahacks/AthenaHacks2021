@@ -964,26 +964,13 @@ body {
     display: none;
   }
 
+  .keynote-img-container{
+    margin: auto;
+  }
+
   #keynote-info-mobile{
     display: block;
     padding-top: 15px;
-  }
-
-  .keynote-profile-mobile{
-    display: flex;
-  }
-
-  .keynote-bio-mobile{
-    padding: 3px;
-  }
-
-  .keynote-img{
-    flex: 0.5;
-  }
-  
-  .keynote-title{
-    padding-left: 15px;
-    flex: 1;
   }
 
   .keynote-name{
