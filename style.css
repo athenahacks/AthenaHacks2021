@@ -8,6 +8,21 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+#mlh-trust-badge{
+  display:block;
+  max-width:100px;
+  min-width:60px;
+  position:fixed;
+  right:12px;
+  top:0;
+  width:7%;
+  z-index:10000
+}
+
+#mlh-trust-badge-mobile{
+  display:none;
+}
+
 .parallax {
   -webkit-perspective: 100px;
           perspective: 100px;
@@ -817,6 +832,21 @@ body {
 
 /* MOBILE */
 @media (max-width: 767px){
+
+  #mlh-trust-badge{
+    display:none;
+  }
+
+  #mlh-trust-badge-mobile{
+    display: block;
+    position:fixed;
+    max-width:100px;
+    min-width:60px;
+    left:12px;
+    top:0;
+    width:7%;
+    z-index:10000
+  }
 
   /* Parallax */
   .full-bg{
