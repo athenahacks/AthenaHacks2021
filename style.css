@@ -521,16 +521,23 @@ body {
 }
 
 .tier3 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
+.tier4 {
+  margin-bottom: 15px;
+}
+
+
 .tier2 img {
-  max-width: 320px !important;
+  width: 40vw;
+  padding: 0 10px 20px 20px;
 }
 
 .tier3 img {
   width: 32vw;
-  padding: 0 10px 30px 30px;
+  padding: 20px 10px 30px 30px;
   /* height: 10vh; */
 }
 
@@ -540,12 +547,13 @@ body {
 }
 
 .tier4 img {
-  max-height: 9vh;
-  max-width: 15vw;
+  width: 22vw;
+  padding: 0 10px 20px 20px;
 }
 
 .tier5 img {
-  max-width: 10vw;
+  width: 20vw;
+  padding: 0 10px 30px 30px;
 }
 
 /* keynote, hidden for the time being */
@@ -751,7 +759,7 @@ body {
   }
 
   /* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
-  #honey {
+  /* #honey {
     height: 7vh;
   }
 
@@ -766,7 +774,7 @@ body {
 
   .tier5 img {
     max-width: 15vw;
-  }
+  } */
 
   /* KEYNOTE */
   #keynote-info{
@@ -1012,7 +1020,22 @@ body {
 
   .tier3 img{
     padding: 10px 5px;
-    width: 80%;
+    width: 78%;
+  }
+
+  .tier2 img {
+    padding: 10px 5px;
+    width: 100%;
+  }
+
+  .tier4 img {
+    padding: 10px 5px;
+    width: 50%;
+  }
+
+  .tier5 img {
+    padding: 10px 5px;
+    width: 60%;
   }
 
   /* KEYNOTE */
