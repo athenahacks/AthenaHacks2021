@@ -556,6 +556,14 @@ body {
   padding: 0 10px 30px 30px;
 }
 
+#pinnacle{
+  width: 15vh;
+}
+
+#echoar{
+  width: 32vh;
+  padding-right: 30px;
+}
 /* keynote, hidden for the time being */
 
 
@@ -1036,6 +1044,19 @@ body {
   .tier5 img {
     padding: 10px 5px;
     width: 60%;
+  }
+
+  #pinnacle{
+    width: 8vh;
+  }
+
+  #echoar-mobile{
+    width: 100%;
+  }
+
+  #echoar{
+    width: 22vh;
+    padding-right: 30px;
   }
 
   /* KEYNOTE */
