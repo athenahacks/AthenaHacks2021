@@ -68,7 +68,7 @@ body {
 }
 
 .parallax__layer__title img{
-  top: 400px;
+  top: 55%;
   /* top: auto; */
   max-height: 220px;
   height: auto;
@@ -80,17 +80,9 @@ body {
 
 .apply-btn{
   margin-right: 4px;
-  top: 79%;
+  top: 80%;
   position: absolute;
   text-decoration: none;
-  /* background-color: blue; */
-  right: 0%;
-}
-
-.apply-btn{
-  margin-right: 4px;
-  top: 79%;
-  position: absolute;
   /* background-color: blue; */
   right: 0%;
 }
